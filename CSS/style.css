@@ -1,4 +1,8 @@
-
+body
+{
+    background-color: rgb(247, 247, 247);
+    font-family: "Poppins";
+}
 header li .links,.nav-link
 {
     font-size: 17px;
@@ -12,7 +16,7 @@ header li .links:hover
 header li .links:hover::after
 {
     position: absolute;
-    content: '';
+    content: "";
     height: 2px;
     width: 100%;
     background-color: orangered;
@@ -29,31 +33,251 @@ svg:hover .logo__home
     transform: translateX(0);
     transition: all 0.18s ease-in-out;
 }
-.carousel-item picture
+.carousel-item
 {
     position: relative;
 }
-.carousel-item h1
+.carousel-item .carousel-caption
 {
+    margin-left: 10%;
+    text-align: start;
     position: absolute;
-    left: -80px;
-    top: -300px;
-    font-size: 50px;
+    left: 0px;
+    top: 24%;
+
+}
+.carousel-item .carousel-caption h3
+{
+    font-size: 20px;
+}
+.Featured
+{
+    margin-top: 120px;
+}
+#pills-tab .nav-link
+{
+    background-color: transparent;
+    color: black;
+}
+#pills-tab .nav-link.active
+{
+    color: orangered;
+    position: relative;
+}
+#pills-tab .nav-link.active::after
+{
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: -15px;
+    width: 70%;
+    height: 2px;
+    background-color: orangered;
+}
+
+.featured-phone
+{
+    padding: 0% 4%;
+}
+.phone-pane
+{
+    background-color:rgb(255, 255, 255) ;
+}
+.phonename
+{
+    background-color:  rgb(250, 250, 250);
+    padding: 5% !important;
+    transition: all 0.3s ease-in-out;
+}
+.phonename a
+{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+.phonename h2
+{
+    font-size: 30px;
+}
+.featured-pageactive:hover  .phonename a
+{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.featured-pageactive:hover  .featured-pageactive-pic img
+{
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
+}
+.featured-pageactive-pic img
+{
+    transition: all 0.3s ease-in-out;
+
+}
+.phone-images
+{
+    width: 60%;
+    transition: all 0.3s ease-in-out;
+}
+.pills-Phones .card
+{
+    background-color: rgb(250, 250, 250);
+    border: none;
+}
+.card-text
+{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.card-body del
+{
+    color: grey;
+    font-size: 18px;
+}
+.card-body p
+{
+    font-size: 20px;
+}
+.card-body a
+{
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+}
+.card:hover a
+{
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.card:hover .price{
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+} 
+.card .price
+{
+    transition: all 0.3s ease-in-out;
+
+}
+.card:hover .phone-images
+{
+    transform: scale(105%);
+    transition: all 0.3s ease-in-out;
+}
+.exclusive-offer .card
+{
+    width: 450px;
+    height: 500px;
+}
+.exclusive-offer .card .card-title
+{
+    margin-top: 10px;
+    font-size: 21px;
     font-weight: 600;
 }
-.carousel-item p
+.exclusive-offer .card .card-text
 {
-    position: absolute;
-    left: -80px; 
-    top: -230px;
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 15px;
+    margin-top: 15px;
 }
-.carousel-item span
+.offer-img
 {
-    position: absolute;
-    left: -80px; 
-    top: -200px;
-    font-size: 26px;
-    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+}
+.exclusive-offer .card:hover .offer-img
+{
+    transform: scale(105%);
+    transition: all 0.2s ease-in-out;
+}
+.card:hover .description{
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+} 
+.card .description
+{
+    transition: all 0.3s ease-in-out;
+
+}
+.section4 .row .card
+{
+    width:700px
+
+}
+.explore
+{
+    transform: translateY(70%);
+
+}
+.section4 .row .card:hover   .explore
+{
+    transform: translateY(20%);
+}
+.section5 .row .card
+{
+    width: 320px;
+    background-color: transparent;
+}
+
+@media (min-width: 1440px)
+{
+    .section5 .row .card i
+    {
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px)
+{
+    .section5 .row .card i
+    {
+        font-size: 56px;
+    }
+    .section5 .row .card
+    {
+        width: 240px;
+       
+    }
+}
+@media screen and (min-width: 849px) and (max-width: 1024px)
+{
+    .section5 .row .card i
+    {
+        font-size: 40px;
+    }
+    .section5 .row .card
+    {
+        width: 200px;
+       
+    } 
+
+}
+@media(max-width:848px)
+{
+    .section5 .row .card i
+    {
+        font-size: 54px;
+    }
+}
+.section5 .row .card h3
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section5 .row .card i
+{
+    color: grey;
+}
+.section5 .row .card:hover
+{
+    color: orangered;
+}
+.section5 .row .card:hover i
+{
+    color: orangered;
 }
